@@ -26,18 +26,18 @@ public class Buzon {
     }
 
     public String amosaPrimerNoLeido() {
-        String porLeer = null;
+        String var = null;
         for (int i = 0; i < mails.size(); i++) {
             if (mails.get(i).Confirmacion != true) {
-                porLeer = mails.get(i).Mensaje;
+                var = mails.get(i).Mensaje;
             }
             mails.get(i).Confirmacion = true;
             break;
         }
-        if (porLeer == null) {
+        if (var == null) {
             return "Todos los correos leidos";
         } else {
-            return porLeer;
+            return var;
         }
     }
 

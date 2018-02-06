@@ -19,11 +19,11 @@ do{
                                + "6: Correos Por Leer\n"
                                + "7: Salir\n"));
      switch(op){
-         case 1: B1.engade(new Correos(JOptionPane.showInputDialog("Mensaje"), false));
+         case 1: B1.engade(new Correos(JOptionPane.showInputDialog("Inserte Mensaje"), false));
                 break;
-         case 2: B1.elimina(Integer.parseInt(JOptionPane.showInputDialog("Correo A Eliminar")));
+         case 2: B1.elimina(Integer.parseInt(JOptionPane.showInputDialog("Inserte Correo A Eliminar")));
                 break;
-         case 3: JOptionPane.showMessageDialog(null, B1.amosar(Integer.parseInt(JOptionPane.showInputDialog("Correo a mostrar"))-1));
+         case 3: JOptionPane.showMessageDialog(null, B1.amosar(Integer.parseInt(JOptionPane.showInputDialog("Inserte Correo a mostrar"))-1));
                 break;
          case 4: JOptionPane.showMessageDialog(null, "Primeiro Correo non Lido:  "+B1.amosaPrimerNoLeido()); 
                 break;
